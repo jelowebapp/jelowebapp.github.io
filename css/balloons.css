@@ -1,0 +1,99 @@
+
+.balloon {
+	--balloonDimension: 8vmax; /* 15% of min(viewport width, height) */
+	width: var(--balloonDimension);
+	height: var(--balloonDimension);
+	border-radius: 100% 100% 100% 100%;
+	margin: 0 0 0 0;
+	transform: rotateZ(5deg);
+	position: absolute;
+	bottom: calc(-1 * var(--balloonDimension));
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation: move 4s ease-in infinite;
+ }
+
+ .balloon::before {
+	content: "";
+	width: 10%;
+	height: 25%;
+	background: radial-gradient(circle, rgba(255,255,255,.7) 0%, rgba(255,255,255,.1) 100%);
+	position: absolute;
+	left: 15%;
+	top: 45%;
+	border-radius: 100%;
+ }
+ .balloon::after {
+	content: "";
+	width: 20%;
+	height: 8%;
+	background-color: inherit;
+	position: absolute;
+	left: 45%;
+	top: 97%;
+	border-radius: 50%;
+	transform: rotateZ(-5deg);
+ }
+
+
+@keyframes move{
+	0%{
+		top: 100%;
+	}
+	100%{
+		top: 0%;
+	}
+}
+.balloon:nth-child(2){
+	left: 10%;
+	top: 0%;
+	background-color: rgba(255, 255, 0, 0.096);
+	animation-duration: 5s;
+}
+.balloon:nth-child(3){
+	left: 20%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 6s;
+}
+
+.balloon:nth-child(4){
+	left: 30%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 7s;
+}
+.balloon:nth-child(5){
+	left: 40%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 5s;
+}
+
+.balloon:nth-child(6){
+	left: 50%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 8s;
+}
+
+.balloon:nth-child(7){
+	left: 60%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 4s;
+}
+.balloon:nth-child(8){
+	left: 70%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 9s;
+}
+
+.balloon:nth-child(9){
+	left: 80%;
+	top: 0%;
+	background-color: rgba(255, 255, 255, 0.096);
+	animation-duration: 5s;
+}
+
