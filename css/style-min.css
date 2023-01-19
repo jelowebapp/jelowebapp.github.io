@@ -1,0 +1,72 @@
+
+@media screen and (max-width: 992px) {
+
+	header {
+		background-color: transparent;
+		position: fixed;
+		right: 0;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		transition: .4s;
+		height: 50px;
+	 }
+    
+    .header .logo {
+        width: 20px;
+        height: 28px;
+        color: #fff;
+	   /* display: none; */
+
+    }
+	.navigation {
+		display: none;
+    }
+    .profile_icon-mobile{
+        display: flex;
+    }
+	.container-togg {
+		display: inline-block;
+    }
+
+	
+	.home_main{
+		width: 100%;
+		overflow: hidden;
+		height: 100%;
+	}
+	
+	.hm_cont{
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 200px;
+		
+	}
+
+	.hm_cont1{
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 200px;
+		
+	}
+
+	.home_text{
+		display: inline;
+		align-self:center;
+		align-items:flex-start;
+	}
+
+	.home_text h1 {
+		font-size: 35px;
+	}
+	
+
+	.box img {
+		width: 90%;
+		height: 200px;
+		object-fit: cover;
+		border-radius: 20px;
+	}
+}
